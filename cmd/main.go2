@@ -1,0 +1,10 @@
+package main
+
+import (
+	"go2/foo"
+)
+
+func main() {
+	foo.PrintSlice[int]([]int{1, 2, 3})
+	foo.PrintSlice[string]([]string{"1", "2", "3"})
+}
