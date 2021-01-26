@@ -1,10 +1,15 @@
 package main
 
 import (
-	"go2/foo"
+	"github.com/pvillela/go2/foo"
 )
+
+// Hack: a file containing the instantiation of a generic function or type needs to have some
+// generic definition in it
+func XXXMain[T any]() {
+}
 
 func main() {
 	foo.PrintSlice[int]([]int{1, 2, 3})
-	foo.PrintSlice[string]([]string{"1", "2", "3"})
+	foo.PrintSlice[string]([]string{"a", "b", "c"})
 }

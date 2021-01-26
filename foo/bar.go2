@@ -2,9 +2,8 @@ package foo
 
 import "fmt"
 
-func PrintSlice[T interface{}](s []T) {
+func PrintSlice[T any](s []T) {
 	for _, v := range s {
-
 		fmt.Println(v)
 	}
 }
